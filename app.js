@@ -1,1 +1,101 @@
-Ly8g44Of44Ol44O844Gu5LuK5pel44Gu6YGL5Yui44Ks44OB44OjCi8vIOS7leanmDog5pel5pys5pmC6ZaT44Gu5pel5LuY44KS44K344O844OJ44Gr44GX44Gm44CB44Gd44Gu5pel44Gu6YGL5Yui44KS5rG644KB44KL77yI6Kqw44GM6ZaL44GE44Gm44KC5ZCM44GY5pel44Gr5ZCM44GY57WQ5p6c77yJ44CCCi8vIDHml6Ux5Zue44Gv56uv5pyr5YG044Gu6KiY6Yyy77yIbG9jYWxTdG9yYWdl77yJ44Gn44KC5ouF5L+d44GZ44KL44CC5pel5LuY44GM5aSJ44KP44KM44Gw5YaN44Gz5byV44GR44KL44CCCihmdW5jdGlvbiAoKSB7CiJ1c2Ugc3RyaWN0IjsKCmZ1bmN0aW9uIHRvZGF5SlNUKCkgewpyZXR1cm4gbmV3IEludGwuRGF0ZVRpbWVGb3JtYXQoImVuLUNBIiwgewp0aW1lWm9uZTogIkFzaWEvVG9reW8iLAp5ZWFyOiAibnVtZXJpYyIsCm1vbnRoOiAiMi1kaWdpdCIsCmRheTogIjItZGlnaXQiCn0pLmZvcm1hdChuZXcgRGF0ZSgpKTsKfQoKZnVuY3Rpb24gaGFzaENvZGUoc3RyKSB7CnZhciBoID0gMDsKZm9yICh2YXIgaSA9IDA7IGkgPCBzdHIubGVuZ3RoOyBpKyspIHsKaCA9IChoICogMzEgKyBzdHIuY2hhckNvZGVBdChpKSkgfCAwOwp9CnJldHVybiBNYXRoLmFicyhoKTsKfQoKZnVuY3Rpb24gZm9ydHVuZUZvcihkYXRlU3RyKSB7CnZhciBsaXN0ID0gd2luZG93LkZPUlRVTkVTOwpyZXR1cm4gbGlzdFtoYXNoQ29kZSgibXl1LWZvcnR1bmUtIiArIGRhdGVTdHIpICUgbGlzdC5sZW5ndGhdOwp9Cgp2YXIgdG9kYXkgPSB0b2RheUpTVCgpOwp2YXIga2V5ID0gIm15dS1mb3J0dW5lLWRyYXduIjsKdmFyIGRyYXduRGF0ZSA9IG51bGw7CnRyeSB7CmRyYXduRGF0ZSA9IHdpbmRvdy5sb2NhbFN0b3JhZ2UuZ2V0SXRlbShrZXkpOwp9IGNhdGNoIChlKSB7CmRyYXduRGF0ZSA9IG51bGw7Cn0KCnZhciBkcmF3QnRuID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImRyYXdCdG4iKTsKdmFyIG5vdGUgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgibm90ZSIpOwp2YXIgY2FyZCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJjYXJkIik7CnZhciBjb3BpZWQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiY29waWVkIik7Cgpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiaGVyb0ltZyIpLnNyYyA9IHdpbmRvdy5NWVVfSU1BR0VTLndhdmU7CgpmdW5jdGlvbiBzaG93Q2FyZCgpIHsKdmFyIGYgPSBmb3J0dW5lRm9yKHRvZGF5KTsKZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImNhcmRJbWciKS5zcmMgPSB3aW5kb3cuTVlVX0lNQUdFU1tmLmltYWdlXTsKZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInJhbmsiKS50ZXh0Q29udGVudCA9IGYucmFuazsKZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIm1lc3NhZ2UiKS50ZXh0Q29udGVudCA9IGYubWVzc2FnZTsKZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImx1Y2t5SXRlbSIpLnRleHRDb250ZW50ID0gZi5sdWNreUl0ZW07CmRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJsdWNreUNvbG9yIikudGV4dENvbnRlbnQgPSBmLmx1Y2t5Q29sb3I7CmRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJhZHZpY2UiKS50ZXh0Q29udGVudCA9ICLjg5/jg6Xjg7zjgYvjgonjga7jgbLjgajjgZPjgajvvJoiICsgZi5hZHZpY2U7CmNhcmQuY2xhc3NMaXN0LnJlbW92ZSgiaGlkZGVuIik7CnJldHVybiBmOwp9CgpmdW5jdGlvbiBsb2NrQnV0dG9uKCkgewpkcmF3QnRuLmRpc2FibGVkID0gdHJ1ZTsKZHJhd0J0bi50ZXh0Q29udGVudCA9ICLku4rml6Xjga7pgYvli6Ljga/ooajnpLrkuK3jgafjgZkiOwpub3RlLnRleHRDb250ZW50ID0gIuaXpeS7mOOBjOWkieOCj+OCi+OBqOOAgeOBvuOBn+W8leOBkeOBvuOBmeOAgiI7Cn0KCmlmIChkcmF3bkRhdGUgPT09IHRvZGF5KSB7CnNob3dDYXJkKCk7CmxvY2tCdXR0b24oKTsKfQoKZHJhd0J0bi5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsIGZ1bmN0aW9uICgpIHsKaWYgKGRyYXdCdG4uZGlzYWJsZWQpIHJldHVybjsKZHJhd0J0bi5jbGFzc0xpc3QuYWRkKCJzaGFrZSIpOwpkcmF3QnRuLmRpc2FibGVkID0gdHJ1ZTsKd2luZG93LnNldFRpbWVvdXQoZnVuY3Rpb24gKCkgewpkcmF3QnRuLmNsYXNzTGlzdC5yZW1vdmUoInNoYWtlIik7CnNob3dDYXJkKCk7CnRyeSB7CndpbmRvdy5sb2NhbFN0b3JhZ2Uuc2V0SXRlbShrZXksIHRvZGF5KTsKfSBjYXRjaCAoZSkgewovLyBsb2NhbFN0b3JhZ2XjgYzkvb/jgYjjgarjgYTnkrDlooPjgafjga/jgIHjgZ3jga7ml6Xjga7lm7rlrprntZDmnpzjga7jgb/jgafntprooYzjgZnjgosKfQpsb2NrQnV0dG9uKCk7Cn0sIDExMDApOwp9KTsKCmRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJzaGFyZUJ0biIpLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgZnVuY3Rpb24gKCkgewp2YXIgZiA9IGZvcnR1bmVGb3IodG9kYXkpOwp2YXIgdGV4dCA9CiIiICsgdG9kYXkgKyAiXG4iICsKIumBi+WLou+8miIgKyBmLnJhbmsgKyAiXG4iICsKZi5tZXNzYWdlICsgIlxuIiArCiLjg6njg4Pjgq3jg7zjgqLjgqTjg4bjg6DvvJoiICsgZi5sdWNreUl0ZW0gKyAi77yP44Op44OD44Kt44O844Kr44Op44O877yaIiArIGYubHVja3lDb2xvcjsKaWYgKG5hdmlnYXRvci5jbGlwYm9hcmQgJiYgbmF2aWdhdG9yLmNsaXBib2FyZC53cml0ZVRleHQpIHsKbmF2aWdhdG9yLmNsaXBib2FyZC53cml0ZVRleHQodGV4dCkudGhlbihmdW5jdGlvbiAoKSB7CmNvcGllZC50ZXh0Q29udGVudCA9ICLjgrPjg5Tjg7zjgZfjgb7jgZfjgZ/jgIIiOwp9LCBmdW5jdGlvbiAoKSB7CmNvcGllZC50ZXh0Q29udGVudCA9ICLjgrPjg5Tjg7zjgafjgY3jgb7jgZvjgpPjgafjgZfjgZ/jgIIiOwp9KTsKfSBlbHNlIHsKY29waWVkLnRleHRDb250ZW50ID0gIuOBk+OBruODluODqeOCpuOCtuOBp+OBr+OCs+ODlOODvOOBq+acquWvvuW/nOOBp+OBmeOAgiI7Cn0KfSk7Cn0pKCk7Cg==
+// ミューの今日の運勢ガチャ
+// 仕様: 日本時間の日付をシードにして、その日の運勢を決める（誰が開いても同じ日に同じ結果）。
+// 1日1回は端末側の記録（localStorage）でも担保する。日付が変われば再び引ける。
+(function () {
+"use strict";
+
+function todayJST() {
+return new Intl.DateTimeFormat("en-CA", {
+timeZone: "Asia/Tokyo",
+year: "numeric",
+month: "2-digit",
+day: "2-digit"
+}).format(new Date());
+}
+
+function hashCode(str) {
+var h = 0;
+for (var i = 0; i < str.length; i++) {
+h = (h * 31 + str.charCodeAt(i)) | 0;
+}
+return Math.abs(h);
+}
+
+function fortuneFor(dateStr) {
+var list = window.FORTUNES;
+return list[hashCode("myu-fortune-" + dateStr) % list.length];
+}
+
+var today = todayJST();
+var key = "myu-fortune-drawn";
+var drawnDate = null;
+try {
+drawnDate = window.localStorage.getItem(key);
+} catch (e) {
+drawnDate = null;
+}
+
+var drawBtn = document.getElementById("drawBtn");
+var note = document.getElementById("note");
+var card = document.getElementById("card");
+var copied = document.getElementById("copied");
+
+document.getElementById("heroImg").src = window.MYU_IMAGES.wave;
+
+function showCard() {
+var f = fortuneFor(today);
+document.getElementById("cardImg").src = window.MYU_IMAGES[f.image];
+document.getElementById("rank").textContent = f.rank;
+document.getElementById("message").textContent = f.message;
+document.getElementById("luckyItem").textContent = f.luckyItem;
+document.getElementById("luckyColor").textContent = f.luckyColor;
+document.getElementById("advice").textContent = "ミューからのひとこと：" + f.advice;
+card.classList.remove("hidden");
+return f;
+}
+
+function lockButton() {
+drawBtn.disabled = true;
+drawBtn.textContent = "今日の運勢は表示中です";
+note.textContent = "日付が変わると、また引けます。";
+}
+
+if (drawnDate === today) {
+showCard();
+lockButton();
+}
+
+drawBtn.addEventListener("click", function () {
+if (drawBtn.disabled) return;
+drawBtn.classList.add("shake");
+drawBtn.disabled = true;
+window.setTimeout(function () {
+drawBtn.classList.remove("shake");
+showCard();
+try {
+window.localStorage.setItem(key, today);
+} catch (e) {
+// localStorageが使えない環境では、その日の固定結果のみで続行する
+}
+lockButton();
+}, 1100);
+});
+
+document.getElementById("shareBtn").addEventListener("click", function () {
+var f = fortuneFor(today);
+var text =
+"" + today + "\n" +
+"運勢：" + f.rank + "\n" +
+f.message + "\n" +
+"ラッキーアイテム：" + f.luckyItem + "／ラッキーカラー：" + f.luckyColor;
+if (navigator.clipboard && navigator.clipboard.writeText) {
+navigator.clipboard.writeText(text).then(function () {
+copied.textContent = "コピーしました。";
+}, function () {
+copied.textContent = "コピーできませんでした。";
+});
+} else {
+copied.textContent = "このブラウザではコピーに未対応です。";
+}
+});
+})();
