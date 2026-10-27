@@ -1,1 +1,101 @@
-Ly8g6YGL5Yui44OH44O844K/44CC6YGL55So44Gn5paH6Z2i44KS5aKX44KE44GZ44Go44GN44Gv44CB44GT44Gu44OV44Kh44Kk44Or44GrMeS7tuOBmuOBpOi/veWKoOOBl+OBplBS44KS5Ye644GZ44GT44Go44CCCi8vIHJhbms6IOWkp+WQiSAvIOS4reWQiSAvIOWwj+WQiSAvIOWQiSAvIOacq+WQiQovLyBpbWFnZTogIndhdmUi77yI5omL44KS5oyv44KL44Of44Ol44O877yJLyAiZGVzayLvvIjmnLrjgafku5XkuovjgZnjgovjg5/jg6Xjg7zvvIkvICJmdWxsIu+8iOWFqOi6q+OBruODn+ODpeODvO+8ieOBi+OCiemBuOOBtgp3aW5kb3cuRk9SVFVORVMgPSBbCiAgewogICAgcmFuazogIuWkp+WQiSIsCiAgICBtZXNzYWdlOiAi5LuK5pel44Gv6L+944GE6aKo44Gu5pel44CC5rip44KB44Gm44GE44Gf6Kmx44KS44CB5LiA44Gk5YmN44Gr6YCy44KB44Gm44G/44Gm44CCIiwKICAgIGx1Y2t5SXRlbTogIuaYn+OBruODouODgeODvOODleOBruWwj+eJqSIsCiAgICBsdWNreUNvbG9yOiAi44K044O844Or44OJIiwKICAgIGFkdmljZTogIuWNiOWJjeS4reOBruWLouOBhOOBjOmNteOBp+OBmeOAguacgOWIneOBrjMw5YiG44Gr5LiA55Wq5aSn5LqL44Gq55So5LqL44KS572u44GE44Gm44G/44Gm44CCIiwKICAgIGltYWdlOiAid2F2ZSIKICB9LAogIHsKICAgIHJhbms6ICLlpKflkIkiLAogICAgbWVzc2FnZTogIuaAneOBhOOBjOOBkeOBquOBhOOBqOOBk+OCjeOBi+OCieOAgeOBhuOCjOOBl+OBhOefpeOCieOBm+OBjOWxiuOBjeOBneOBhuOAgiIsCiAgICBsdWNreUl0ZW06ICLmlrDjgZfjgYTjg47jg7zjg4giLAogICAgbHVja3lDb2xvcjogIuOCr+ODquODvOODoCIsCiAgICBhZHZpY2U6ICLpgKPntaHjga/ml6njgoHjgavov5TjgZnjgajjgIHoia/jgYTmtYHjgozjgYzntprjgY3jgb7jgZnjgIIiLAogICAgaW1hZ2U6ICJ3YXZlIgogIH0sCiAgewogICAgcmFuazogIuS4reWQiSIsCiAgICBtZXNzYWdlOiAi44Kz44OE44Kz44OE6YCy44KB44Gf44GT44Go44GM44CB5LuK5pel44GC44Gf44KK5a6f44KS57WQ44Gz44G+44GZ44CCIiwKICAgIGx1Y2t5SXRlbTogIua4qeOBi+OBhOmjsuOBv+eJqSIsCiAgICBsdWNreUNvbG9yOiAi44ON44Kk44OT44O8IiwKICAgIGFkdmljZTogIuacuuOBruS4iuOCkuWwkeOBl+eJh+OBpeOBkeOCi+OBqOOAgemgreOBruS4reOCguOBmeOBo+OBjeOCiuOBl+OBvuOBmeOCiOOAgiIsCiAgICBpbWFnZTogImRlc2siCiAgfSwKICB7CiAgICByYW5rOiAi5Lit5ZCJIiwKICAgIG1lc3NhZ2U6ICLoqrDjgYvjga7kuIDoqIDjgYzjgIHmraLjgb7jgaPjgabjgYTjgZ/ogIPjgYjjgpLli5XjgYvjgZfjgabjgY/jgozjgovml6XjgIIiLAogICAgbHVja3lJdGVtOiAi5LuY566LIiwKICAgIGx1Y2t5Q29sb3I6ICLmsLToibIiLAogICAgYWR2aWNlOiAi55u46KuH44Gv55+t44GP44CB6KaB54K544KS5LiA44Gk44Gr57We44KL44Gu44GM44Kz44OE44Gn44GZ44CCIiwKICAgIGltYWdlOiAiZGVzayIKICB9LAogIHsKICAgIHJhbms6ICLkuK3lkIkiLAogICAgbWVzc2FnZTogIuiyt+OBhOeJqemBi+OBjOS4iuWQkeOBjeOAguavlOOBueOBpumBuOOBtuOBqOOAgeOBhOOBhOOCguOBruOBq+WHuuS8muOBiOOBvuOBmeOAgiIsCiAgICBsdWNreUl0ZW06ICLjgqjjgrPjg5Djg4PjgrAiLAogICAgbHVja3lDb2xvcjogIuiLpeiNieiJsiIsCiAgICBhZHZpY2U6ICLljbPmsbrjga7liY3jgavjgIHpgIHmlpnjgajov5Tlk4HmnaHku7bjgaDjgZHnorroqo3jgZfjgabjgIIiLAogICAgaW1hZ2U6ICJmdWxsIgogIH0sCiAgewogICAgcmFuazogIuWwj+WQiSIsCiAgICBtZXNzYWdlOiAi5bCP44GV44Gq44Op44OD44Kt44O844GM54K544CF44Go5pWj44KJ44Gw44KL5pel44CC6KaL6YCD44GV44Gq44GE44Gn44CCIiwKICAgIGx1Y2t5SXRlbTogIuODj+ODs+OCq+ODgSIsCiAgICBsdWNreUNvbG9yOiAi55m9IiwKICAgIGFkdmljZTogIuOBhOOBpOOCguOBrumBk+OCkuWwkeOBl+WkieOBiOOCi+OBqOOAgeOBhOOBhOeZuuimi+OBjOOBguOCiuOBvuOBmeOAgiIsCiAgICBpbWFnZTogImZ1bGwiCiAgfSwKICB7CiAgICByYW5rOiAi5bCP5ZCJIiwKICAgIG1lc3NhZ2U6ICLlibXkvZzjga7nqK7jgYzopovjgaTjgYvjgovml6XjgILjg6Hjg6LjgavmrovjgZnjgajjgIHlvozjgafogrLjgaHjgb7jgZnjgIIiLAogICAgbHVja3lJdGVtOiAi5rC05b2p44OR44Os44OD44OIIiwKICAgIGx1Y2t5Q29sb3I6ICLnvqTpnZIiLAogICAgYWR2aWNlOiAi5LiL5omL44Gn44KC5LiA5p6a44CB5b2i44Gr44GX44Gm44G/44KL44Gu44GM5LuK5pel44Gu5q2j6Kej44Gn44GZ44CCIiwKICAgIGltYWdlOiAiZnVsbCIKICB9LAogIHsKICAgIHJhbms6ICLlsI/lkIkiLAogICAgbWVzc2FnZTogIuaVtOeQhuaVtOmgk+OBjOmBi+OCkuWRvOOBs+OBvuOBmeOAguW8leOBjeWHuuOBl+S4gOOBpOOBi+OCieOBqeOBhuOBnuOAgiIsCiAgICBsdWNreUl0ZW06ICLjgq/jg6rjgqLjg5XjgqHjgqTjg6siLAogICAgbHVja3lDb2xvcjogIuOCsOODrOODvCIsCiAgICBhZHZpY2U6ICLmjajjgabjgovliY3jgavjgIHlhpnnnJ/jgavmkq7jgaPjgabmrovjgZnjgajov7fjgYTjgb7jgZvjgpPjgIIiLAogICAgaW1hZ2U6ICJkZXNrIgogIH0sCiAgewogICAgcmFuazogIuWQiSIsCiAgICBtZXNzYWdlOiAi5bmz56mP44GM44GE44Gh44Gw44KT44Gu5Y+O56mr44CC54Sh55CG44Gu44Gq44GE5LqI5a6a44GM5ZCJ44Gn44GZ44CCIiwKICAgIGx1Y2t5SXRlbTogIua5r+OBruOBvyIsCiAgICBsdWNreUNvbG9yOiAi55Sf5oiQ44KKIiwKICAgIGFkdmljZTogIuWknOOBr+aXqeOCgeOBq+eUu+mdouOCkumWieOBmOOCi+OBqOOAgeaYjuaXpeOBjOi7veOBj+OBquOCiuOBvuOBmeOAgiIsCiAgICBpbWFnZTogImRlc2siCiAgfSwKICB7CiAgICByYW5rOiAi5ZCJIiwKICAgIG1lc3NhZ2U6ICLpoLzjgb/jgZTjgajjgpLjgZXjgozjgoTjgZnjgYTml6XjgILjgafjgY3jgovnr4Tlm7Ljgaflj5fjgZHjgovjgajpgYvmsJfjgqLjg4Pjg5fjgIIiLAogICAgbHVja3lJdGVtOiAi44Oc44O844Or44Oa44OzIiwKICAgIGx1Y2t5Q29sb3I6ICLntLoiLAogICAgYWR2aWNlOiAi5byV44GN5Y+X44GR44KL5YmN44Gr44CB5pyf6ZmQ44Gg44GR44Gv56K66KqN44GX44Gm44GK44GE44Gm44CCIiwKICAgIGltYWdlOiAid2F2ZSIKICB9LAogIHsKICAgIHJhbms6ICLmnKvlkIkiLAogICAgbWVzc2FnZTogIuS7iuaXpeOBr+eoruOBvuOBjeOBruaXpeOAgue1kOaenOOBr+WwkeOBl+WFiOOBq+OChOOBo+OBpuadpeOBvuOBmeOAgiIsCiAgICBsdWNreUl0ZW06ICLoprPokYnmpI3niakiLAogICAgbHVja3lDb2xvcjogIue3kSIsCiAgICBhZHZpY2U6ICLnhKbjgaPjgabntZDoq5bjgpLlh7rjgZXjgZrjgIHkuIDmmanlr53jgYvjgZvjgovjga7jgYzjgYrjgZnjgZnjgoHjgafjgZnjgIIiLAogICAgaW1hZ2U6ICJmdWxsIgogIH0sCiAgewogICAgcmFuazogIuacq+WQiSIsCiAgICBtZXNzYWdlOiAi44GG44Gj44GL44KK44Of44K544Gr5rOo5oSP44CC6YCB5L+h5YmN44Gu44Gy44Go5ZG85ZC444GM5a6I44Gj44Gm44GP44KM44G+44GZ44CCIiwKICAgIGx1Y2t5SXRlbTogIuODgeOCp+ODg+OCr+ODquOCueODiCIsCiAgICBsdWNreUNvbG9yOiAi6buE6ImyIiwKICAgIGFkdmljZTogIuWkp+S6i+OBqumAo+e1oeOBr+OAgemAgeOCi+WJjeOBq+Wum+WQjeOBqOa3u+S7mOOCkuOCguOBhuS4gOW6puimi+OBpuOAgiIsCiAgICBpbWFnZTogImRlc2siCiAgfQpdOwo=
+// 運勢データ。運用で文面を増やすときは、このファイルに1件ずつ追加してPRを出すこと。
+// rank: 大吉 / 中吉 / 小吉 / 吉 / 末吉
+// image: "wave"（手を振るミュー）/ "desk"（机で仕事するミュー）/ "full"（全身のミュー）から選ぶ
+window.FORTUNES = [
+  {
+    rank: "大吉",
+    message: "今日は追い風の日。温めていた話を、一つ前に進めてみて。",
+    luckyItem: "星のモチーフの小物",
+    luckyColor: "ゴールド",
+    advice: "午前中の勢いが鍵です。最初の30分に一番大事な用事を置いてみて。",
+    image: "wave"
+  },
+  {
+    rank: "大吉",
+    message: "思いがけないところから、うれしい知らせが届きそう。",
+    luckyItem: "新しいノート",
+    luckyColor: "クリーム",
+    advice: "連絡は早めに返すと、良い流れが続きます。",
+    image: "wave"
+  },
+  {
+    rank: "中吉",
+    message: "コツコツ進めたことが、今日あたり実を結びます。",
+    luckyItem: "温かい飲み物",
+    luckyColor: "ネイビー",
+    advice: "机の上を少し片づけると、頭の中もすっきりしますよ。",
+    image: "desk"
+  },
+  {
+    rank: "中吉",
+    message: "誰かの一言が、止まっていた考えを動かしてくれる日。",
+    luckyItem: "付箋",
+    luckyColor: "水色",
+    advice: "相談は短く、要点を一つに絞るのがコツです。",
+    image: "desk"
+  },
+  {
+    rank: "中吉",
+    message: "買い物運が上向き。比べて選ぶと、いいものに出会えます。",
+    luckyItem: "エコバッグ",
+    luckyColor: "若草色",
+    advice: "即決の前に、送料と返品条件だけ確認して。",
+    image: "full"
+  },
+  {
+    rank: "小吉",
+    message: "小さなラッキーが点々と散らばる日。見逃さないで。",
+    luckyItem: "ハンカチ",
+    luckyColor: "白",
+    advice: "いつもの道を少し変えると、いい発見があります。",
+    image: "full"
+  },
+  {
+    rank: "小吉",
+    message: "創作の種が見つかる日。メモに残すと、後で育ちます。",
+    luckyItem: "水彩パレット",
+    luckyColor: "群青",
+    advice: "下手でも一枚、形にしてみるのが今日の正解です。",
+    image: "full"
+  },
+  {
+    rank: "小吉",
+    message: "整理整頓が運を呼びます。引き出し一つからどうぞ。",
+    luckyItem: "クリアファイル",
+    luckyColor: "グレー",
+    advice: "捨てる前に、写真に撮って残すと迷いません。",
+    image: "desk"
+  },
+  {
+    rank: "吉",
+    message: "平穏がいちばんの収穫。無理のない予定が吉です。",
+    luckyItem: "湯のみ",
+    luckyColor: "生成り",
+    advice: "夜は早めに画面を閉じると、明日が軽くなります。",
+    image: "desk"
+  },
+  {
+    rank: "吉",
+    message: "頼みごとをされやすい日。できる範囲で受けると運気アップ。",
+    luckyItem: "ボールペン",
+    luckyColor: "紺",
+    advice: "引き受ける前に、期限だけは確認しておいて。",
+    image: "wave"
+  },
+  {
+    rank: "末吉",
+    message: "今日は種まきの日。結果は少し先にやって来ます。",
+    luckyItem: "観葉植物",
+    luckyColor: "緑",
+    advice: "焦って結論を出さず、一晩寝かせるのがおすすめです。",
+    image: "full"
+  },
+  {
+    rank: "末吉",
+    message: "うっかりミスに注意。送信前のひと呼吸が守ってくれます。",
+    luckyItem: "チェックリスト",
+    luckyColor: "黄色",
+    advice: "大事な連絡は、送る前に宛名と添付をもう一度見て。",
+    image: "desk"
+  }
+];
