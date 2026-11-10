@@ -149,13 +149,13 @@ p.lead{text-align:center;color:var(--muted);font-size:13px;margin:0 0 14px}
   </header>
 
   <main id="view"></main>
-  <footer class="foot">結果は今日の分として固定されます ／ 生年月日そのものは保存せず、占いに使うコードだけを端末内に保存します</footer>
+  <footer class="foot">結果は今日の分として固定されます ／ 生年月日そのものは保存せず、生まれ年と占いに使うコードだけを端末内に保存します</footer>
 </div>
 
 <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
   <div class="modalcard">
     <h2>初回登録 ― 占い用プロフィール</h2>
-    <p class="note">四柱推命と星座のために生年月日を聞きます。生年月日そのものは保存しません。保存するのは占いに使うコード（星座・干支など）で、この端末の中だけに置き、外には送りません。</p>
+    <p class="note">四柱推命と星座のために生年月日を聞きます。生年月日そのものは保存しません。保存するのは生まれ年と、占いに使うコード（星座・干支など）で、この端末の中だけに置き、外には送りません。</p>
     <form id="profileForm">
       <label>生年月日（必須）
         <input type="date" id="fBirth" required min="1920-01-01" max="2100-12-31">
@@ -242,7 +242,7 @@ window.DATA_OMIKUJI = {
       low: ['集中しにくい日です。短い時間に区切る工夫を。', '基礎に戻ると吉。あせりは禁物です。']
     },
     '争事': {
-      high: ['有利に運びやすい日です。言い過ぎないことが条件です', '有利に運びやすい日です。証拠と記録を整えて臨んでください。'],
+      high: ['有利に運びやすい日です。言い過ぎないことが条件です。', '有利に運びやすい日です。証拠と記録を整えて臨んでください。'],
       mid: ['和解が最善です。引くことで得るものがあります。', '長引かせないことが吉。早めの決着が運を守ります。'],
       low: ['今日は不利です。争いそのものを避けるのが賢明です。', '言葉の行き違いに注意。書面で確認すると守られます。']
     },
@@ -1536,7 +1536,7 @@ window.DATA_FLOWER.flowerWords = {
   'バラ': ['愛情', '美'],
   'マリーゴールド': ['健康'],
   'ひまわり': ['あなただけを見つめている', '憧れ'],
-  'チューリップ': ['思いやり', '愛の告白'],
+  'チューリップ': ['思いやり'],
   'クローバー': ['約束', '幸運'],
   'ルリタマアザミ': ['鋭敏', '豊かな感情'],
   'ネモフィラ': ['どこでも成功', '可憐', '清々しい心'],
@@ -1804,6 +1804,7 @@ window.DATA_FLOWER.flowerWords = {
       ['月柱', pillarName(pil.month), tenGod(pil.day[0], pil.month[0])],
       ['日柱', pillarName(pil.day), '日主']
     ] });
+    if (profile.setsuNote) sections.push(sec('ご注意', '生まれた日が節入りの前後に当たるため、生まれた時刻によって月の干支が変わることがあります。'));
     var td = today.split('-');
     var tPil = pillars(parseInt(td[0], 10), parseInt(td[1], 10), parseInt(td[2], 10));
     var god = tenGod(pil.day[0], tPil.day[0]);
@@ -1813,7 +1814,8 @@ window.DATA_FLOWER.flowerWords = {
     sections.push({ h: '五行バランス', bars: [['木', g.count['木']], ['火', g.count['火']], ['土', g.count['土']], ['金', g.count['金']], ['水', g.count['水']]] });
     if (g.richList && g.richList.length > 1) sections.push(sec('満ちている気', g.richList.join('・') + 'の気がそろって満ちています。同点の気が支え合う、巡りのよい配置です。'));
     else sections.push(sec('満ちている気', pickFresh(rng, D.richest[g.richest], 'sh:rich:' + g.richest, used, today).text));
-    if (g.lackList && g.lackList.length > 1) sections.push(sec('補いたい気', g.lackList.join('・') + 'の気が控えめです。' + pickFresh(rng, D.lacking[g.lackList[0]], 'sh:lack:' + g.lackList[0], used, today).text));
+    if (g.lackList && g.lackList.length >= 3) sections.push(sec('補いたい気', g.richList.join('・') + 'の気が際立っています。ほかの気はほどよく並んでいます。'));
+    else if (g.lackList && g.lackList.length > 1) sections.push(sec('補いたい気', g.lackList.join('・') + 'の気が控えめです。' + pickFresh(rng, D.lacking[g.lackList[0]], 'sh:lack:' + g.lackList[0], used, today).text));
     else sections.push(sec('補いたい気', pickFresh(rng, D.lacking[g.lacking], 'sh:lack:' + g.lacking, used, today).text));
     var st = stage12(pil.day[0], pil.month[1]);
     sections.push(sec('十二運 ― ' + st, D.unsei12[st]));
@@ -1851,7 +1853,7 @@ window.DATA_FLOWER.flowerWords = {
     var word = cw || pickFresh(rng, (D.flowerWords || {})[M[2]] || [e.word], 'fl:word:' + masterIdx, used, today).text;
     var R = D.reads[masterIdx];
     var sections = [
-      sec('今日の花', dispShade + '（花言葉：' + word + '）'),
+      sec('今日の花', cw ? dispShade + '（花言葉：' + word + '）' : dispShade + '（' + M[2] + 'の花言葉：' + word + '）'),
       sec('キャッチコピー', pickFresh(rng, R.catch, 'fl:catch:' + masterIdx, used, today).text),
       sec('今日のあなた', pickFresh(rng, R.persona, 'fl:persona:' + masterIdx, used, today).text),
       sec('今日の行動', pickFresh(rng, R.action, 'fl:action:' + masterIdx, used, today).text),
@@ -1977,7 +1979,7 @@ window.DATA_FLOWER.flowerWords = {
 /* 運勢ガチャ v2 本体UI
 - 日付は端末の現地時間 0:00 で切り替え、その日の結果は固定（引き直し不可）
 - プロフィールは換算コードのみ保存。文面は直近30日かぶり防止
-- ミューズ占い：レインボー大吉は18%、引いた回数で5回出なければ次に必ず出る（初回は必ず虹） */
+- ミューズ占い：レインボー大吉は約26%（基本18%＋救済。引いた回数で5回出なければ次に必ず出る。初回は必ず虹） */
 (function () {
 var LS = {
 get: function (k, d) { try { var v = localStorage.getItem('mfg2_' + k); return v? JSON.parse(v): d;} catch (e) { return d;}},
@@ -2028,7 +2030,7 @@ if (result.rainbow) LS.set('muse_last_rainbow', TODAY);
 function commitIds(res) {
 if (!res || !res._ids) return;
 var dirty = false;
-res._ids.forEach(function (id) { if (!used[id]) { used[id] = TODAY; dirty = true;}});
+res._ids.forEach(function (id) { if (used[id]!== TODAY) { used[id] = TODAY; dirty = true;}});
 if (dirty) saveUsed();
 }
 function heroStyle(key) { return key === 'muse'? ' style="object-position:center 12%"': '';}
