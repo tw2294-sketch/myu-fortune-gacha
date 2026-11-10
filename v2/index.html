@@ -58,7 +58,7 @@ p.lead{text-align:center;color:var(--muted);font-size:13px;margin:0 0 14px}
 
 /* カード一覧 */
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
-.fcard{position:relative;height:172px;perspective:900px;background:none;border:none;padding:0;text-align:left;width:100%}
+.fcard{position:relative;height:206px;perspective:900px;background:none;border:none;padding:0;text-align:left;width:100%}
 .fcard .inner{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.2,.7,.3,1.2)}
 .fcard.flipped .inner{transform:rotateY(180deg)}
 .face{position:absolute;inset:0;border-radius:14px;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:1px solid var(--line);display:block}
@@ -81,7 +81,8 @@ p.lead{text-align:center;color:var(--muted);font-size:13px;margin:0 0 14px}
 
 /* 詳細 */
 .hero{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line)}
-.hero img{width:100%;height:300px;object-fit:cover;display:block}
+.hero img{width:100%;height:300px;object-fit:cover;display:block;animation:heroZoom 14s ease-in-out infinite alternate}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.07)}}
 .hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,4,20,.05) 40%,rgba(5,4,20,.9))}
 .hero .hinfo{position:absolute;left:0;right:0;bottom:14px;text-align:center;z-index:2;padding:0 12px}
 .hero .type{font-size:12px;letter-spacing:.2em;color:var(--gold2)}
@@ -133,6 +134,31 @@ p.lead{text-align:center;color:var(--muted);font-size:13px;margin:0 0 14px}
 .modalcard .primary{margin-top:18px}
 .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);background:rgba(10,8,32,.94);border:1px solid var(--gold);color:var(--cream);padding:10px 18px;border-radius:999px;font-size:13.5px;z-index:20;opacity:0;pointer-events:none;transition:opacity .25s}
 .toast.on{opacity:1}
+
+/* シーン演出（トップ画面をモックの世界観に寄せる） */
+.scene{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#0a0824;min-height:545px;margin-top:10px}
+.scene>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.85)}
+.scene .moon{position:absolute;top:30px;left:50%;width:118px;height:118px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,#fff8dd 0%,#ffe9a8 35%,rgba(255,233,168,.25) 62%,transparent 72%);animation:moonPulse 5s ease-in-out infinite}
+@keyframes moonPulse{0%,100%{opacity:.75;transform:translateX(-50%) scale(1)}50%{opacity:1;transform:translateX(-50%) scale(1.06)}}
+.scene .circle{position:absolute;top:88px;left:50%;width:344px;height:344px;margin-left:-172px;opacity:.55;pointer-events:none}
+.scene .ring1{transform-origin:100px 100px;animation:spin 70s linear infinite}
+.scene .ring2{transform-origin:100px 100px;animation:spinRev 110s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes spinRev{to{transform:rotate(-360deg)}}
+.scene .parts{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.scene .parts i{position:absolute;bottom:-12px;border-radius:50%;background:radial-gradient(circle,#ffe9a8,#d9a441);opacity:0;animation:rise linear infinite}
+@keyframes rise{0%{transform:translateY(0);opacity:0}12%{opacity:.95}100%{transform:translateY(-570px);opacity:0}}
+.scene .candRow{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;justify-content:center;padding:16px 12px 18px;background:linear-gradient(180deg,transparent,rgba(5,4,20,.92) 45%);z-index:2}
+.scene .cand{height:216px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;animation:floaty 5s ease-in-out infinite}
+.scene .cand:nth-child(2){animation-delay:.8s}
+.scene .cand:nth-child(3){animation-delay:1.6s}
+.scene .cand .num{font-size:30px}
+.scene .cand .fname{font-size:11.5px;line-height:1.5}
+.scene .cand .shape{font-size:10.5px;line-height:1.5}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.sceneIn{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:22px;text-align:center;z-index:2}
+.sceneIn .primary{max-width:280px}
+.grid .fcard{animation:floaty 6.5s ease-in-out infinite}
 
 </style>
 </head>
@@ -2088,12 +2114,24 @@ setTimeout(function () { t.classList.remove('on');}, 2200);
 
 // ---------- 画面：トップ＝選択 ----------
 var COLOR_DOT = { '赤': '#d23c2e', '橙': '#e8862e', '黄': '#e5c02e', '黄緑': '#9bc53d', '緑': '#3d9b50', '青緑': '#2eb8a6', '水色': '#6fc3e7', '青': '#3d6fd1', '紫': '#8a5fc0', '桃': '#f2a0b5', '紅紫': '#c04a8a', '茶': '#9b6b43', '白': '#f2f0e8', '灰': '#a8a8b0', '黒': '#3a3a44'};
+function circleSvg() {
+var dots = '';
+for (var i = 0; i < 12; i++) { var a = i * Math.PI / 6; dots += '<circle cx="' + (100 + 88 * Math.cos(a)).toFixed(1) + '" cy="' + (100 + 88 * Math.sin(a)).toFixed(1) + '" r="2.2" fill="#ffe9a8"/>';}
+return '<svg class="circle" viewBox="0 0 200 200" aria-hidden="true"><g class="ring1"><circle cx="100" cy="100" r="96" fill="none" stroke="rgba(255,233,168,.5)" stroke-width="1"/>' + dots + '</g><g class="ring2"><circle cx="100" cy="100" r="74" fill="none" stroke="rgba(190,160,255,.55)" stroke-width="1" stroke-dasharray="5 7"/><circle cx="100" cy="100" r="58" fill="none" stroke="rgba(255,233,168,.35)" stroke-width="1"/></g></svg>';
+}
+function spawnParts() {
+var box = document.getElementById('parts'); if (!box) return;
+var s = '';
+for (var i = 0; i < 16; i++) { var sz = (3 + Math.random() * 4).toFixed(1); s += '<i style="left:' + (4 + Math.random() * 92).toFixed(1) + '%;animation-duration:' + (6 + Math.random() * 7).toFixed(1) + 's;animation-delay:' + (Math.random() * 6).toFixed(1) + 's;width:' + sz + 'px;height:' + sz + 'px"></i>';}
+box.innerHTML = s;
+}
 function renderTop() {
 var html = '<p class="date">' + TODAY.replace(/-/g, '/') + '</p>';
 if (!profile) {
-html += '<h2 class="title">今日の運勢を占います</h2><p class="lead">最初に一度だけ、占い用プロフィールの登録をお願いします。</p>' +
-'<button class="primary bigbtn" id="goRegister">プロフィールを登録する</button>';
+html += '<div class="scene" style="min-height:440px"><img class="bg" src="' + A('choice-abstract.webp') + '" alt=""><div class="moon"></div>' + circleSvg() + '<div class="parts" id="parts"></div>' +
+'<div class="sceneIn"><h2 class="title">今日の運勢を占います</h2><p class="lead">最初に一度だけ、占い用プロフィールの登録をお願いします。</p><button class="primary" id="goRegister">プロフィールを登録する</button></div></div>';
 view.innerHTML = html;
+spawnParts();
 document.getElementById('goRegister').onclick = openModal;
 return;
 }
@@ -2108,16 +2146,17 @@ document.getElementById('goDetail').onclick = function () { renderDetail(r, 'top
 return;
 }
 if (day.choice!== null && day.results) {
-html += '<h2 class="title">今日の運勢は決まっています</h2><p class="lead">「あなたの選択により今日の運勢が導かれました」</p>' +
-'<button class="primary bigbtn" id="goCards">カードを見る</button>';
+html += '<div class="scene" style="min-height:400px"><img class="bg" src="' + A('choice-abstract.webp') + '" alt=""><div class="moon"></div>' + circleSvg() + '<div class="parts" id="parts"></div>' +
+'<div class="sceneIn"><h2 class="title">今日の運勢は決まっています</h2><p class="lead">「あなたの選択により今日の運勢が導かれました」</p><button class="primary" id="goCards">カードを見る</button></div></div>';
 view.innerHTML = html;
+spawnParts();
 document.getElementById('goCards').onclick = renderCards;
 return;
 }
 var med = day.setup.medium;
 html += '<h2 class="title">直感でひとつ、選んでください</h2>' +
 '<p class="lead">' + (med === 'tarot'? '今日はタロットの日。3枚のカードから1枚を。': '今日は石の日。袋の中の3つの石から1つを。') + '</p>';
-html += '<div class="choiceWrap"><img class="bg" src="' + A('choice-abstract.webp') + '" alt=""><div class="beam" id="beam"></div><div class="candRow">';
+html += '<div class="scene"><img class="bg" src="' + A('choice-abstract.webp') + '" alt=""><div class="moon"></div>' + circleSvg() + '<div class="parts" id="parts"></div><div class="beam" id="beam"></div><div class="candRow">';
 day.setup.cand.forEach(function (mi) {
 var M = FG.MASTER[mi];
 html += '<button class="cand" data-mi="' + mi + '"><span class="num">' + M[0] + '</span>' +
@@ -2127,6 +2166,7 @@ html += '<button class="cand" data-mi="' + mi + '"><span class="num">' + M[0] + 
 });
 html += '</div></div>';
 view.innerHTML = html;
+spawnParts();
 Array.prototype.forEach.call(view.querySelectorAll('.cand'), function (el) {
 el.onclick = function () {
 var mi = parseInt(el.getAttribute('data-mi'), 10);
@@ -2150,11 +2190,11 @@ renderCards();
 function renderCards() {
 if (!day.results) { renderTop(); return;}
 var html = '<p class="date">' + TODAY.replace(/-/g, '/') + '</p><h2 class="title">今日のカード</h2><p class="lead">光っているカードは当たりの印。めくりたいものだけ、どうぞ。</p><div class="grid">';
-day.setup.order.forEach(function (key) {
+day.setup.order.forEach(function (key, oi) {
 var r = day.results[key];
 var flipped = day.flipped.indexOf(key) >= 0;
 var sparkCls = r.spark === 'rainbow'? ' spark-rainbow': r.spark === 'gold'? ' spark-gold': '';
-html += '<button class="fcard' + sparkCls + (flipped? ' flipped': '') + '" data-key="' + key + '"><span class="glow"></span><span class="inner">' +
+html += '<button class="fcard' + sparkCls + (flipped? ' flipped': '') + '" data-key="' + key + '" style="animation-delay:' + (oi * 0.45).toFixed(2) + 's"><span class="glow"></span><span class="inner">' +
 '<span class="face back"><img src="' + A('back-' + key + '.webp') + '" alt=""><span class="info"><span class="type">' + esc(r.type) + '</span><span class="tap">タップでめくる</span></span></span>' +
 '<span class="face front"><img src="' + A('front-' + key + '.webp') + '" alt=""><span class="info"><span class="type">' + esc(r.type) + '</span><span class="head' + (r.head.length >= 11? ' long': '') + '">' + esc(r.head) + '</span></span></span>' +
 '</span></button>';
