@@ -160,6 +160,15 @@ p.lead{text-align:center;color:var(--muted);font-size:13px;margin:0 0 14px}
 .sceneIn .primary{max-width:280px}
 .grid .fcard{animation:floaty 6.5s ease-in-out infinite}
 
+/* 最終確認の軽い指摘への対応（F1・F2・F3） */
+.sceneIn .lead{text-shadow:0 1px 6px rgba(0,0,0,.9)}
+.scene .cand{flex:1 1 0;min-width:0}
+.scene .cand .fname{word-break:keep-all;overflow-wrap:anywhere}
+@media (prefers-reduced-motion: reduce){
+  .scene *, .grid .fcard, .hero img{animation:none}
+  .scene .moon{transform:translateX(-50%)}
+}
+
 </style>
 </head>
 <body>
@@ -1840,7 +1849,7 @@ window.DATA_FLOWER.flowerWords = {
     sections.push({ h: '五行バランス', bars: [['木', g.count['木']], ['火', g.count['火']], ['土', g.count['土']], ['金', g.count['金']], ['水', g.count['水']]] });
     if (g.richList && g.richList.length > 1) sections.push(sec('満ちている気', g.richList.join('・') + 'の気がそろって満ちています。同点の気が支え合う、巡りのよい配置です。'));
     else sections.push(sec('満ちている気', pickFresh(rng, D.richest[g.richest], 'sh:rich:' + g.richest, used, today).text));
-    if (g.lackList && g.lackList.length >= 3) sections.push(sec('補いたい気', g.richList.join('・') + 'の気が際立っています。ほかの気はほどよく並んでいます。'));
+    if (g.lackList && g.lackList.length >= 3 && g.count[g.lackList[0]] > 0) sections.push(sec('補いたい気', g.richList.join('・') + 'の気が際立っています。ほかの気はほどよく並んでいます。'));
     else if (g.lackList && g.lackList.length > 1) sections.push(sec('補いたい気', g.lackList.join('・') + 'の気が控えめです。' + pickFresh(rng, D.lacking[g.lackList[0]], 'sh:lack:' + g.lackList[0], used, today).text));
     else sections.push(sec('補いたい気', pickFresh(rng, D.lacking[g.lacking], 'sh:lack:' + g.lacking, used, today).text));
     var st = stage12(pil.day[0], pil.month[1]);
@@ -2161,7 +2170,7 @@ day.setup.cand.forEach(function (mi) {
 var M = FG.MASTER[mi];
 html += '<button class="cand" data-mi="' + mi + '"><span class="num">' + M[0] + '</span>' +
 '<div class="cname"><span class="dot" style="background:' + COLOR_DOT[M[1]] + '"></span>' + (M[1].endsWith('色')? esc(M[1]): esc(M[1]) + '色') + '</div>' +
-'<div class="fname">模様：' + esc(M[2]) + '</div>' +
+'<div class="fname">模様<br>' + esc(M[2]).replace('チョコレートコスモス', 'チョコレート<wbr>コスモス').replace('ルリタマアザミ', 'ルリタマ<wbr>アザミ') + '</div>' +
 (med === 'stone'? '<div class="shape">' + esc(M[4]) + '</div>': '') + '</button>';
 });
 html += '</div></div>';
