@@ -198,6 +198,8 @@ p.lead{text-align:center;color:var(--muted);font-size:13px;margin:0 0 14px}
 .primary:active,.imgbtn:active{transform:scale(.97)}
 .primary,.imgbtn{transition:transform .12s ease}
 
+.hero .tint{position:absolute;inset:0;mix-blend-mode:color;opacity:.45;z-index:2;pointer-events:none}
+
 </style>
 </head>
 <body>
@@ -2176,6 +2178,7 @@ if (r.key === 'zodiac') for (var i = 0; i < 12; i++) if (r.head.indexOf(signs[i]
 if (r.key === 'tarot') { var ti = tnames.indexOf(r.head.split('（')[0]); if (ti >= 0) r.img = 'tarot-' + pad2(ti + 1) + '.webp'; }
 if (r.key === 'color' && mi !== null && mi !== undefined) r.img = 'stone-' + pad2(mi + 1) + '.webp';
 if (r.key === 'flower' && mi !== null && mi !== undefined) r.img = 'flower-' + pad2(mi + 1) + '.webp';
+if (r.key === 'flower') { var adj = r.head.split('の')[0]; var tm = { '赤い': '#e0483c', 'ピンクの': '#f28bb4', '白い': '#f5f2ea', '黄色い': '#f2c230', '黒い': '#3a3a44', '青い': '#3d6fd1', '水色の': '#6fc3e7', 'オレンジ色の': '#e8862e', '紫の': '#8a5fc0', '紅色の': '#c0304a', '赤紫の': '#c04a8a', '茶色の': '#9b6b43' }; if (tm[adj]) r.tint = tm[adj]; }
 if (r.key === 'muse') r.img = r.rainbow ? 'front-muse.webp' : 'muse-alt.webp';
 if (r.key === 'number') { var mm = /数字は (\d+)/.exec(r.head); if (mm) r.num = mm[1]; }
 if (r.key === 'shichu') { var el = { '甲': 'wood', '乙': 'wood', '丙': 'fire', '丁': 'fire', '戊': 'earth', '己': 'earth', '庚': 'metal', '辛': 'metal', '壬': 'water', '癸': 'water' }[r.head.replace('日主は', '')]; if (el) r.imgCls = 'el-' + el; }
@@ -2204,7 +2207,7 @@ return;
 if (day.omakase) {
 var r = day.results[day.omakase.type];
 html += '<h2 class="title">今日のおまかせ一占</h2><p class="lead">選ぶ手間なく、今日のひとつが届きました。</p>' +
-'<div class="hero"><img src="' + A(frontFor(r)) + '" alt="" class="' + (r.imgCls || '') + '"' + heroStyle(r.key) + '><div class="shade"></div>' + (r.key === 'number' && r.num ? '<div class="bignum">' + r.num + '</div>' : '') +
+'<div class="hero"><img src="' + A(frontFor(r)) + '" alt="" class="' + (r.imgCls || '') + '"' + heroStyle(r.key) + '><div class="shade"></div>' + (r.tint ? '<div class="tint" style="background:' + r.tint + '"></div>' : '') + (r.key === 'number' && r.num ? '<div class="bignum">' + r.num + '</div>' : '') +
 '<div class="hinfo"><span class="type">' + esc(r.type) + '</span><div class="head">' + esc(r.head) + '</div></div></div>' +
 '<button class="primary bigbtn" id="goDetail">結果を見る</button>';
 setView(html);
@@ -2316,7 +2319,7 @@ document.body.style.backgroundAttachment = on ? 'fixed' : '';
 }
 function renderDetail(r, from) {
 setDetailBg(true);
-var html = '<div class="hero"><img src="' + A(frontFor(r)) + '" alt="" class="' + (r.imgCls || '') + '"' + heroStyle(r.key) + '><div class="shade"></div>' + (r.key === 'number' && r.num ? '<div class="bignum">' + r.num + '</div>' : '') +
+var html = '<div class="hero"><img src="' + A(frontFor(r)) + '" alt="" class="' + (r.imgCls || '') + '"' + heroStyle(r.key) + '><div class="shade"></div>' + (r.tint ? '<div class="tint" style="background:' + r.tint + '"></div>' : '') + (r.key === 'number' && r.num ? '<div class="bignum">' + r.num + '</div>' : '') +
 '<div class="hinfo"><span class="type">' + esc(r.type) + '</span><div class="head">' + esc(r.head) + '</div>' +
 (r.sub? '<div class="sub">' + esc(r.sub) + '</div>': '') + '</div></div>';
 html += '<div class="sections">' + r.sections.map(sectionHtml).join('') + '</div>';
