@@ -2199,7 +2199,7 @@ function renderTop() {
 setDetailBg(false);
 var html = '<p class="date">' + TODAY.replace(/-/g, '/') + '</p>';
 if (!profile) {
-html += '<div class="scene" style="min-height:520px"><img class="bg" src="' + A('top-hero.webp') + '" alt=""><div class="moon"></div>' + circleSvg() + '<div class="parts" id="parts"></div>' +
+html += '<div class="scene" style="min-height:520px"><img class="bg" src="' + A('top-hero.webp') + '" alt="">' + circleSvg() + '<div class="parts" id="parts"></div>' +
 '<div class="sceneIn"><h2 class="title">今日の運勢を占います</h2><p class="lead">最初に一度だけ、占い用プロフィールの登録をお願いします。</p><button class="primary" id="goRegister">プロフィールを登録する</button></div></div>';
 setView(html);
 spawnParts();
@@ -2217,7 +2217,7 @@ document.getElementById('goDetail').onclick = function () { renderDetail(r, 'top
 return;
 }
 if (day.choice!== null && day.results) {
-html += '<div class="scene" style="min-height:460px"><img class="bg" src="' + A('top-hero.webp') + '" alt=""><div class="moon"></div>' + circleSvg() + '<div class="parts" id="parts"></div>' +
+html += '<div class="scene" style="min-height:460px"><img class="bg" src="' + A('top-hero.webp') + '" alt="">' + circleSvg() + '<div class="parts" id="parts"></div>' +
 '<div class="sceneIn"><h2 class="title">今日の運勢は決まっています</h2><p class="lead">「あなたの選択により今日の運勢が導かれました」</p><button class="primary" id="goCards">カードを見る</button></div></div>';
 setView(html);
 spawnParts();
@@ -2227,7 +2227,7 @@ return;
 var med = day.setup.medium;
 html += '<h2 class="title">直感でひとつ、選んでください</h2>' +
 '<p class="lead">' + (med === 'tarot'? '今日はタロットの日。3枚のカードから1枚を。': '今日は石の日。袋の中の3つの石から1つを。') + '</p>';
-html += '<div class="scene"><img class="bg" style="object-position:center 20%" src="' + A('top-hero.webp') + '" alt=""><div class="moon"></div>' + circleSvg() + '<div class="parts" id="parts"></div><div class="beam" id="beam"></div><div class="candRow">';
+html += '<div class="scene"><img class="bg" style="object-position:center 20%" src="' + A('top-hero.webp') + '" alt="">' + circleSvg() + '<div class="parts" id="parts"></div><div class="beam" id="beam"></div><div class="candRow">';
 day.setup.cand.forEach(function (mi) {
 var M = FG.MASTER[mi];
 html += '<button class="cand" data-mi="' + mi + '"><span class="num">' + M[0] + '</span>' +
